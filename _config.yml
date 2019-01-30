@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (https://username.github.io) then use these settings:
-url: "https://wlingkit.github.io"
+url: "https://username.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -73,7 +73,7 @@ footer-link-col: "#404040"
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: false
-  email: "wlingkit@gmail.com"
+  email: "mwlingkit@gmail.com"
 # facebook: ""
   github: "wlingkit"
   linkedin: "wlingkit"
