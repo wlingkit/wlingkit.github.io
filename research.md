@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Research/Group projects
+title: Group projects
 ---
 ### The effects of temperature on the Oxygen Production of Chlamydomonas reinhardtii (2018)
 This was an experimental study that was designed to help us understand how temperature could affect salmon. Studying Chlamy's behaviour with change of temperature gave us insight on how temperature could affect salmon. By measuring the oxygen production, we can understand how Chlamy can affect salmon as a food source and its ecosystem in-terms of chemical balance. Ultimately, we found no significant difference. 
