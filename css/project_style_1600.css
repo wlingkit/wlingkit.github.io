@@ -1,0 +1,20 @@
+@media screen and (max-width: 1600px){
+	h1 {
+		margin: 24px 0px 24px 0px;
+	}
+	.parallel_container {
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		padding: 0 10% 0 10%;
+		height: auto;
+		margin: 0;
+	}
+
+	.item_container {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		margin: 0;
+	}
+}
