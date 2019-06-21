@@ -299,7 +299,32 @@ a:active {
 }
 
 /************************* portrait *********************************/
-@media screen and (max-width: 850px){	
+@media screen and (max-width: 1600px){
+	.sec_three {
+		top: 0;
+		position: relative;
+		margin: 0;
+		width: 220px;
+		height: 220px;
+		text-align: center;
+		transition: all .2s ease-in-out;
+	}
+
+}
+
+@media screen and (max-width: 1200px){
+	.sec_three {
+		top: 0;
+		position: relative;
+		margin: 0;
+		width: 150px;
+		height: 150px;
+		text-align: center;
+		transition: all .2s ease-in-out;
+	}
+
+}
+@media screen and (max-width: 900px){	
 	.large_box {
 		position: relative;
 		display: table-row;
@@ -383,14 +408,6 @@ a:active {
 		z-index: -5;
 	}
 
-	.whatIveDone_container {
-		position: relative;
-		margin: 0;
-		padding: 0;
-		width: 100vw;
-		height: 1350px;
-	}
-
 	.box_group {
 		position: relative;
 		display: table;
@@ -413,40 +430,6 @@ a:active {
 		/*outline: 3px solid yellow;*/
 	}
 
-	.whatIdoForFun_container {
-		position: relative;
-		margin: 0;
-		padding: 0;
-		width: 100vw;
-		height: 600px;
-	}
-
-	.sec_three {
-		top: 0;
-		position: relative;
-		display: inline-flex;
-		width: 200px;
-		height: 200px;
-		border-radius: 25px;
-		text-align: center;
-	}
-
-	.overlay {
-		position: absolute;
-		bottom: 0;
-		background-color: black;
-		width: 200px;
-		height: 200px;
-		transition: .5s ease;
-		border-radius: 25px;
-	}
-
-	.sec_three_text {
-		display: inline-flex;
-		position: relative;
-		font-size: 24px;
-		margin: 40% auto 40% auto;
-	}
 }
 
 @media screen and (max-width: 550px){
@@ -481,13 +464,6 @@ a:active {
 		z-index: -5;
 	}
 
-	.whatIveDone_container {
-		position: relative;
-		margin: 0;
-		padding: 0;
-		width: 100vw;
-		height: 1830px;
-	}
 	.box_group {
 		display: table;
 		padding: 0;
@@ -543,53 +519,19 @@ a:active {
 		font-size: 16px;
 	}
 
-	.round_corners_pic {
-		width: 200px;
-		height: 200px;
-		margin: 0;
-		border-radius: 25px;
-	}
-
 	body {
 		font-size: 12px
-	}
-
-	
-
-	.whatIdoForFun_container {
-		position: relative;
-		margin: 0;
-		padding: 0;
-		width: 100vw;
-		height: 500px;
 	}
 
 	.sec_three {
 		top: 0;
 		position: relative;
 		display: inline-flex;
-		width: 140px;
-		height: 140px;
-		border-radius: 25px;
+		width: 100px;
+		height: 100px;
 		text-align: center;
 	}
 
-	.overlay {
-		position: absolute;
-		bottom: 0;
-		background-color: black;
-		width: 140px;
-		height: 140px;
-		transition: .5s ease;
-		border-radius: 25px;
-	}
-
-	.sec_three_text {
-		display: inline-flex;
-		position: relative;
-		font-size: 20px;
-		margin: 40% auto 40% auto;
-	}
 }
 
 
