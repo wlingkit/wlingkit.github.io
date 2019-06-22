@@ -362,7 +362,7 @@ a:active {
 	.active {
 		position: absolute;
 		display: block;
-		background-color: rgba(20, 20, 20, .9);
+		background-color: rgba(20, 20, 20, .5);
 	}
 
 	h1 {

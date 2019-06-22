@@ -221,7 +221,7 @@ ul li a:hover {
 		position: absolute;
 		display: block;
 		z-index: 5;
-		background-color: rgba(20, 20, 20, .9);
+		background-color: rgba(20, 20, 20, .5);
 	}
 
 	h1 {
