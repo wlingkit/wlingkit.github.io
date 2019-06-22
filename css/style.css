@@ -622,29 +622,11 @@ a:active {
 		display: inline-flex;
 		width: 160px;
 		height: 160px;
-		border-radius: 25px;
 		text-align: center;
-	}
-
-	.overlay {
-		position: absolute;
-		bottom: 0;
-		background-color: black;
-		width: 160px;
-		height: 160px;
-		transition: .5s ease;
-		border-radius: 25px;
-	}
-
-	.sec_three_text {
-		display: inline-flex;
-		position: relative;
-		font-size: 24px;
-		margin: 40% auto 40% auto;
 	}
 } 
 
-@media screen and (max-height: 500px){
+@media screen and (max-height: 500px) and (orientation: landscape){
 	
 	/*max width around 550, make h1 smaller, sec3 smaller*/
 	.whatIveDone_container {
@@ -709,19 +691,12 @@ a:active {
 		font-size: 16px;
 	}
 
-	.round_corners_pic {
-		width: 200px;
-		height: 200px;
-		margin: 0;
-		border-radius: 25px;
-	}
-
 	body {
 		font-size: 12px
 	}
 }
 
-@media screen and (max-height: 360px){
+@media screen and (max-height: 360px) and (orientation: landscape){
 	/* mostly the whatIveDone section */
 	h1 {
 		font-size: 30px;
@@ -730,30 +705,37 @@ a:active {
 		padding: 0;
 	}
 
+	.large_box {
+		position: relative;
+		display: table-row;
+		text-align: left;
+		float: left;
+		padding: 4px;
+		margin: auto 4px auto 4px;
+		width: 300px;
+		height: auto;
+		/*For visualizing the container */
+		/*outline: 3px solid red;*/
+	}
+
+	.small_box {
+		position: relative;
+		display: table-row;
+		float: left;
+		padding: 0;
+		margin: auto;
+		width: 150px;
+		height: 150px;
+		/*For visualizing the container */
+		/*outline: 3px solid yellow;*/
+	}
+
 	.sec_three {
 		top: 0;
 		position: relative;
 		display: inline-flex;
 		width: 130px;
 		height: 130px;
-		border-radius: 25px;
 		text-align: center;
-	}
-
-	.overlay {
-		position: absolute;
-		bottom: 0;
-		background-color: black;
-		width: 130px;
-		height: 130px;
-		transition: .5s ease;
-		border-radius: 25px;
-	}
-
-	.sec_three_text {
-		display: inline-flex;
-		position: relative;
-		font-size: 20px;
-		margin: 40% auto 40% auto;
 	}
 }
