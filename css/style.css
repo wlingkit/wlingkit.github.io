@@ -4,7 +4,6 @@
 body {
 	background-color: #141414;
 	margin: 0;
-/*font*/
 	font-family: 'Nunito', sans-serif;
 	color: #ffffff;
 	overflow: hidden;
@@ -31,8 +30,6 @@ h1 {
 	width: auto;
 	text-align: center;
 	z-index: 2
-	/*For visualizing the container */
-	/*outline: 3px solid green;*/
 }
 
 .small_box {
@@ -43,8 +40,6 @@ h1 {
 	margin: 0;
 	width: 250px;
 	height: 250px;
-	/*For visualizing the container */
-	/*outline: 3px solid yellow;*/
 }
 
 .large_box {
@@ -57,8 +52,6 @@ h1 {
 	margin: auto;
 	width: 520px;
 	height: auto;
-	/*For visualizing the container */
-	/*outline: 3px solid red;*/
 }
 
 .sub_heading {
@@ -68,8 +61,6 @@ h1 {
 	color: #4DD2C8;
 	float: left;
 	font-size: 24px;
-	/*For visualizing the container */
-	/*outline: 3px solid #4DD2C8;*/
 }
 
 .sub_sub_heading {
@@ -147,8 +138,6 @@ h1 {
 	height: auto;
 	font-size: 20px;
 	padding: 0 20% 0 20%;
-	/* For visualizing the container */
-	/*outline: 2px solid red;*/
 }
 
 .personal_pic {
@@ -159,8 +148,6 @@ h1 {
 	border-radius: 50%;
 	z-index: 1
 }
-
-/* WHAT IVE DONE */
 
 /* WHAT I DO FOR FUN */
 .sec_three_container {
@@ -186,13 +173,6 @@ h1 {
 	transform: scale(1.1);
 	z-index: 2;
 }
-
-/*.sec_three_text {
-	position: relative;
-	font-size: 40px;
-	margin: auto;
-	text-align: center;
-}*/
 
 /************************* parallax **************************/
 /*perspective is how far the object is away from the user. The child element that get the perspective view, not the element itself */
@@ -375,8 +355,6 @@ a:active {
 		color: #4DD2C8;
 		float: left;
 		font-size: 24px;
-		/*For visualizing the container */
-		/*outline: 3px solid #4DD2C8;*/
 	}
 
 	.sub_sub_heading {
@@ -406,8 +384,6 @@ a:active {
 		width: auto;
 		height: auto;
 		text-align: center;
-		/*For visualizing the container */
-		/*outline: 3px solid green;*/
 	}
 	.small_box {
 		position: relative;
@@ -417,8 +393,6 @@ a:active {
 		margin: 0;
 		width: 200px;
 		height: 200px;
-		/*For visualizing the container */
-		/*outline: 3px solid yellow;*/
 	}
 
 	.large_box {
@@ -447,8 +421,6 @@ a:active {
 		color: #4DD2C8;
 		float: left;
 		font-size: 20px;
-		/*For visualizing the container */
-		/*outline: 3px solid #4DD2C8;*/
 	}
 
 	.personal_pic {
@@ -466,8 +438,6 @@ a:active {
 		height: auto;
 		text-align: center;
 		z-index: 2
-		/*For visualizing the container */
-		/*outline: 3px solid green;*/
 	}
 	.small_box {
 		position: relative;
@@ -477,8 +447,6 @@ a:active {
 		margin: 0;
 		width: 200px;
 		height: 200px;
-		/*For visualizing the container */
-		/*outline: 3px solid yellow;*/
 	}
 
 	.social_media {
@@ -494,8 +462,6 @@ a:active {
 		width: 100%;
 		font-size: 16px;
 		padding: 0 20% 0 20%;
-		/* For visualizing the container */
-		/*outline: 2px solid red;*/
 	}
 	.front_page_name {
 		margin: auto;
@@ -518,8 +484,6 @@ a:active {
 		margin: 16px auto 16px auto;
 		width: 280px;
 		text-align: center;
-		/*For visualizing the container */
-		/*outline: 3px solid green;*/
 	}
 
 	.large_box {
@@ -531,8 +495,6 @@ a:active {
 		margin: auto;
 		width: 280px;
 		height: auto;
-		/*For visualizing the container */
-		/*outline: 3px solid red;*/
 	}
 
 	.small_box {
@@ -543,8 +505,6 @@ a:active {
 		margin: auto;
 		width: 150px;
 		height: 150px;
-		/*For visualizing the container */
-		/*outline: 3px solid yellow;*/
 	}
 
 	.sub_heading {
@@ -554,8 +514,6 @@ a:active {
 		color: #4DD2C8;
 		float: left;
 		font-size: 20px;
-		/*For visualizing the container */
-		/*outline: 3px solid #4DD2C8;*/
 	}
 
 	.sub_sub_heading {
@@ -621,8 +579,6 @@ a:active {
 } 
 
 @media screen and (max-height: 500px) and (orientation: landscape){
-	
-	/*max width around 550, make h1 smaller, sec3 smaller*/
 	.whatIveDone_container {
 		position: relative;
 		margin: 0;
@@ -636,8 +592,6 @@ a:active {
 		margin: 8px auto 8px auto;
 		width: auto;
 		text-align: center;
-		/*For visualizing the container */
-		/*outline: 3px solid green;*/
 	}
 
 	.large_box {
@@ -649,8 +603,6 @@ a:active {
 		margin: auto 4px auto 4px;
 		width: 350px;
 		height: 200px;
-		/*For visualizing the container */
-		/*outline: 3px solid red;*/
 	}
 
 	.small_box {
@@ -661,8 +613,6 @@ a:active {
 		margin: auto;
 		width: 200px;
 		height: 200px;
-		/*For visualizing the container */
-		/*outline: 3px solid yellow;*/
 	}
 
 	.sub_heading {
@@ -672,8 +622,6 @@ a:active {
 		color: #4DD2C8;
 		float: left;
 		font-size: 18px;
-		/*For visualizing the container */
-		/*outline: 3px solid #4DD2C8;*/
 	}
 
 	.sub_sub_heading {
@@ -691,7 +639,6 @@ a:active {
 }
 
 @media screen and (max-height: 360px) and (orientation: landscape){
-	/* mostly the whatIveDone section */
 	h1 {
 		font-size: 30px;
 		text-align: center;
@@ -708,8 +655,6 @@ a:active {
 		margin: auto 4px auto 4px;
 		width: 300px;
 		height: auto;
-		/*For visualizing the container */
-		/*outline: 3px solid red;*/
 	}
 
 	.small_box {
@@ -720,8 +665,6 @@ a:active {
 		margin: auto;
 		width: 150px;
 		height: 150px;
-		/*For visualizing the container */
-		/*outline: 3px solid yellow;*/
 	}
 
 	.sec_three {
