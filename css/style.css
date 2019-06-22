@@ -386,11 +386,68 @@ a:active {
 		font-size: 16px;
 	}
 
-	.front_page_img_scale {
-		width: 1600px;
-		background-color: #1b1b1b;
-		transform: translateX(-350px);
+	.personal_pic {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		margin: auto;
+		border-radius: 50%;
 		z-index: -5;
+	}
+
+	body {
+		font-size: 16px
+	}
+
+	.box_group {
+		position: relative;
+		display: table;
+		width: auto;
+		height: auto;
+		text-align: center;
+		/*For visualizing the container */
+		/*outline: 3px solid green;*/
+	}
+	.small_box {
+		position: relative;
+		display: table-row;
+		float: left;
+		padding: 16px;
+		margin: 0;
+		width: 200px;
+		height: 200px;
+		/*For visualizing the container */
+		/*outline: 3px solid yellow;*/
+	}
+
+	.large_box {
+		position: relative;
+		display: table-row;
+		text-align: left;
+		float: left;
+		padding: 0;
+		margin: auto;
+		width: 270px;
+		height: auto;
+		font-size: 
+	}
+	.social_media {
+		font-size: 8em;
+	}
+
+
+}
+
+@media screen and (max-width: 600px){
+	.sub_heading {
+		width: 100%;
+		margin: 8px 0 2px 0;
+		position: relative;
+		color: #4DD2C8;
+		float: left;
+		font-size: 20px;
+		/*For visualizing the container */
+		/*outline: 3px solid #4DD2C8;*/
 	}
 
 	.personal_pic {
@@ -399,7 +456,6 @@ a:active {
 		width: 100%;
 		margin: auto;
 		border-radius: 50%;
-		z-index: -5;
 	}
 
 	.box_group {
@@ -430,7 +486,6 @@ a:active {
 
 
 }
-
 @media screen and (max-width: 550px){
 	.aboutMe {
 		margin: auto;
@@ -454,13 +509,6 @@ a:active {
 		text-align: center;
 		margin: 36px 0px 36px 0px;
 		padding: 0;
-	}
-
-	.front_page_img_scale {
-		width: 1600px;
-		background-color: #1b1b1b;
-		transform: translateX(-380px);
-		z-index: -5;
 	}
 
 	.box_group {
@@ -492,8 +540,8 @@ a:active {
 		float: none;
 		padding: 16px;
 		margin: auto;
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 		/*For visualizing the container */
 		/*outline: 3px solid yellow;*/
 	}
