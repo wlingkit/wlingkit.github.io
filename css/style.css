@@ -82,24 +82,25 @@ h1 {
 }
 
 .button {
-	background-color: #141414;
+	background: transparent;
 	border: none;
-	padding: 16px;
-	margin: auto;
 	text-align: center;
-	border-radius: 25px;
-	
+	padding: 0;
+	margin: 16px;
 }
 
 .button a {
-	font-size: 16px;
+	position: relative;
+	background-color: #141414;
+	font-size: 18px;
+	padding: 16px;
 	color: white;
 	text-decoration: none;
 	font-family: 'Nunito', sans-serif;
-
+	border-radius: 25px;
 }
 
-.button:hover {
+.button a:hover {
 	background-color: #434343;
 }
 
