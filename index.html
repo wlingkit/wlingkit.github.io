@@ -1,157 +1,405 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Michael Wong</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Nunito&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/2aea866abf.js"></script>
-
+	<meta name="theme-color" content="#09111c">
+	<link rel="stylesheet" href="css/style.css?v=19">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2aea866abf.js" crossorigin="anonymous"></script>
 </head>
-<body>		
+<body>
 	<div class="MainContainer">
-		<div class="ParallaxToplayer">
-			<nav>
-				<div class="toggle">
-					<i class="fa fa-bars menu" aria-hidden="true"></i>
-				</div>
-				<ul>
-					<li><a href="index.html">Home</a></li>					
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="Michael_Wong_Resume_20210729.pdf" target="_black">Resume</a></li>										
-				</ul>
-			</nav>
-			<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-			<script type="text/javascript">
-					$(document).ready(function(){
-						$('.menu').click(function(){
-							$('ul').toggleClass('active');
-						})
-					})
-			</script>
-			<div class="front_page_name">Hey. I'm Michael Wong.</div>	
-		</div>
-		<div class="ParallaxContainer">
-		</div>
-		<div class="ContentContainer">
-			
-			<div class="container_1">
-				<h1>Something about me</h1>
-				<div class="box_group">
-					<div class="small_box" style="padding: 0px;">
-						<img class="personal_pic" src="images/amgen.png">
-					</div>
-					<div class="large_box" style="padding: 16px;">			
-					After graduating from The University of British Columbia, I started working at Amgen as a software engineer. Needless to say, it was and still is a very enriching experience. This job allows me to apply the skills and knowledge that I have acquired over the years to my everyday work. On top of that, learning opportunities are presented to me constantly. This is great as I have always had a curiosity for learning and this allows me and my career to grow continuously.
-					</div>
-				</div>
-			</div>	
-			
-
-	<!-- Group 3 -->
-			<div class="container_2">
-					<h1>What I've done</h1>					
-					<div class="box_group">
-						<div class="small_box">
-							<img class="round_corners_pic" src="images/ubc.png">
-						</div>
-						<div class="large_box">
-							<div class="sub_heading">
-									University of British Columbia
-							</div>
-							<div class="sub_sub_heading">
-									BSc in Combined Major in Science, earned in 2019
-							</div>
-							My years at UBC have changed me in a positive way. Many professors showed kindness and professionalism that have pushed me to challenge myself. The ups and downs at UBC have taught me the important values in life. Through failures, I learned perseverance. Through sadness, I learned gratefulness. I will always be able to take my experiences here and apply them into future ones. Tuum Est. 
-						</div>
-					</div>
-					<div class="box_group">
-						<div class="small_box">
-								<img class="round_corners_pic" src="images/chlamy.png">
-						</div>
-						<div class="large_box"> 
-							<div class="sub_heading">
-									Research project on <i>Chlamydomonas reinhardtii</i>
-							</div>
-							<div class="sub_sub_heading">
-									The Expedition, published in 2019 
-							</div>
-							An experimental study that was designed to help us understand how temperature could affect salmon. Studying Chlamy’s behaviour with the change of temperature gave us insight on the indirect effect of it on salmon. By measuring the oxygen production, we can understand how Chlamy can affect salmon as a food source and its ecosystem in-terms of chemical balance. Ultimately, we found no significant difference.
-						</div>
-					</div>
-
-					<div class="box_group">
-						<div class="small_box">
-								<img class="round_corners_pic" src="images/AI.png">
-						</div>
-						<div class="large_box"> 
-							<div class="sub_heading">
-									Global AI Hackathon
-							</div>
-							<div class="sub_sub_heading">
-									Participated in 2017 
-							</div>
-							A group project done within a two days time limit. The program is an AI that was designed to identify whether a given sentence is a joke or not. Using modified data parsed from varies websites, it was trained with supervised learning to obtain an accuracy of roughly 86%.
-						</div>
-					</div>
-
-					<div class="box_group">
-						<div class="small_box">
-								<img class="round_corners_pic" src="images/crabs.png">
-						</div>
-						<div class="large_box"> 
-							<div class="sub_heading">
-									Research project on <i>Hemigrapsus oregonensis</i>
-							</div>
-							<div class="sub_sub_heading">
-									Conducted in 2017 
-							</div>
-							Hemigrapsus oregonens is a small shore crab. This study was done to understand the effect of temperature on the velocity of Hemigrapsus oregonensis. We have found that as temperature decreases, so will the velocity of the shore crab.
-						</div>
-					</div>
-					<button class="button">
-						<a href="projects.html">See more</a>
+		<header class="site-header">
+			<a class="brand" href="#about" aria-label="Michael Wong, start">
+				<span class="brand-mark" aria-hidden="true">MW</span>
+				<span>MICHAEL WONG</span>
+			</a>
+			<div class="social-links header-social-links" aria-label="Social links">
+				<a href="https://www.linkedin.com/in/wlingkit/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+				<a href="https://github.com/wlingkit" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+				<a href="mailto:mwlingkit@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+			</div>
+			<nav aria-label="Main navigation">
+				<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-links" aria-label="Open navigation">
+					<i class="fas fa-bars" aria-hidden="true"></i>
+				</button>
+				<div class="site-links" id="site-links">
+					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
+					<a href="#beyond">Beyond</a>
+					<a href="Michael_Wong_Resume_20210729.pdf" target="_blank" rel="noopener">Resume</a>
+					<button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">
+						<i class="fas fa-moon" aria-hidden="true"></i>
 					</button>
-			</div>
-		
+				</div>
+			</nav>
+		</header>
 
-	<!-- Group 4 -->
-			<div class="container_1">
-				<div class="sec_three_container">
-					<h1>What keeps me busy</h1>
-						<img class="sec_three" src="images/game1.png">
-						<img class="sec_three" src="images/game2.png">
-						<img class="sec_three" src="images/game3.png">
-						<img class="sec_three" src="images/game4.png">
-						<img class="sec_three" src="images/gym1.png">
-						<img class="sec_three" src="images/gym2.png">
-						<img class="sec_three" src="images/fish1.png">
-						<img class="sec_three" src="images/fish2.png">
-						<img class="sec_three" src="images/fish3.png">
-						<img class="sec_three" src="images/fish4.png">
-						<img class="sec_three" src="images/fish5.png">
-						<img class="sec_three" src="images/fish6.png">
-						<img class="sec_three" src="images/nova1.png">
-						<img class="sec_three" src="images/nova2.png">
-						<img class="sec_three" src="images/nova3.png">
-						<img class="sec_three" src="images/nova4.png">
-						<img class="sec_three" src="images/nova5.png">
-						<img class="sec_three" src="images/nova6.png">
+		<main class="world" aria-label="Portfolio side scroller">
+			<svg class="sprite-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+				<symbol id="sprite-person" viewBox="0 0 64 88">
+					<g shape-rendering="crispEdges">
+						<path fill="#17191d" d="M18 7h28v4h6v8h-5v-4H17v4h-5v-7h6zM12 19h5v15h-5zm31 15h5V20h5v16h-5v5H17v-5h26z"/>
+						<path fill="#efb990" d="M18 15h27v21H18z"/>
+						<path fill="#17191d" d="M18 15h5v5h-5zm20 0h7v5h-7z"/>
+						<path fill="#f7f4e9" d="M17 21h12v10H17zm19 0h12v10H36z"/>
+						<path fill="#263744" d="M20 23h8v6h-8zm19 0h8v6h-8z"/>
+						<path fill="#111c25" d="M15 19h16v3H15zm0 3h3v9h-3zm13 0h3v9h-3zm-13 9h16v3H15zm19-12h16v3H34zm0 3h3v9h-3zm13 0h3v9h-3zm-13 9h16v3H34z"/>
+						<path fill="#111c25" d="M31 23h3v3h-3zM12 21H9v3h3zm38 0h4v3h-4z"/>
+						<path fill="#bb795b" d="M28 32h8v4h-8z"/>
+						<path fill="#6d4033" d="M25 38h14v7H25z"/>
+						<path fill="#3c7180" d="M17 45h30v23H17z"/>
+						<path fill="#285363" d="M12 48h7v19h-7zm33 0h7v19h-7z"/>
+						<path fill="#efb990" d="M8 62h8v8H8zm40 0h8v8h-8z"/>
+						<path fill="#374957" d="M17 66h13v16H17zm17 0h13v16H34z"/>
+						<path fill="#263744" d="M13 80h19v6H13zm19 0h20v6H32z"/>
+					</g>
+				</symbol>
+				<symbol id="sprite-wife" viewBox="0 0 64 88">
+					<g shape-rendering="crispEdges">
+						<path fill="#382820" d="M18 8h27v5h6v9h5v29h-6V39h-5v-8H19v9h-5v12H9V20h5v-7h4z"/>
+						<path fill="#efc19d" d="M19 16h26v21H19z"/>
+						<path fill="#382820" d="M18 17h5v10h-5zm23-1h6v12h-6z"/>
+						<path fill="#f6f2e9" d="M20 23h8v7h-8zm17 0h8v7h-8z"/>
+						<path fill="#37404a" d="M22 24h4v5h-4zm17 0h4v5h-4z"/>
+						<path fill="#bc8068" d="M28 33h8v4h-8z"/>
+						<path fill="#51362f" d="M25 39h14v6H25z"/>
+						<path fill="#a76d91" d="M18 45h29v22H18z"/>
+						<path fill="#825274" d="M14 48h7v18h-7zm30-8h6v25h-6z"/>
+						<path fill="#efc19d" d="M10 63h8v8h-8zm40 0h8v8h-8z"/>
+						<path fill="#37404a" d="M18 66h13v16H18zm17 0h13v16H35z"/>
+						<path fill="#222a32" d="M14 80h18v6H14zm18 0h20v6H32z"/>
+					</g>
+				</symbol>
+				<symbol id="sprite-dog" viewBox="0 0 88 64">
+					<g shape-rendering="crispEdges">
+						<path fill="#a95e25" d="M10 29h10v-7h7v8h-7v7h-7z"/>
+						<path fill="#e8ad3b" d="M18 34h50v13H18z"/>
+						<path fill="#f6c95e" d="M23 30h38v10H23z"/>
+						<path fill="#cf8732" d="M19 45h49v6H19zm6 5h9v9h-9zm30 0h9v9h-9z"/>
+						<path fill="#a95e25" d="M22 57h15v4H22zm27 0h15v4H49z"/>
+						<path fill="#f0ba4d" d="M38 16h23v24H38z"/>
+						<path fill="#f6c95e" d="M41 11h17v28H41z"/>
+						<path fill="#a95e25" d="M34 15h10v18h-6v10h-7V24h3zm21 0h10v9h5v17h-8v-9h-7z"/>
+						<path fill="#ffd778" d="M42 17h15v14H42z"/>
+						<path fill="#31251d" d="M43 21h4v5h-4zm10 0h4v5h-4z"/>
+						<path fill="#ffe9b5" d="M42 28h16v9H42z"/>
+						<path fill="#e6ad3b" d="M39 29h7v8h-7zm15 0h7v8h-7z"/>
+						<path fill="#fff0ca" d="M43 32h14v8H43z"/>
+						<path fill="#30251d" d="M47 29h7v6h-7z"/>
+						<path fill="#e8ad3b" d="M48 35h5v3h-5z"/>
+					</g>
+				</symbol>
+				<symbol id="sprite-tabby" viewBox="0 0 64 72">
+					<g shape-rendering="crispEdges">
+						<path fill="#7b6857" d="M14 18h8v-9h10v7h8V9h10v10h7v25h-7v11H13V42H7V25h7z"/>
+						<path fill="#bdab91" d="M17 22h31v20H17z"/>
+						<path fill="#57483c" d="M16 18h5v15h-5zm12-4h5v17h-5zm13 0h5v17h-5zm12 8h5v14h-5z"/>
+						<path fill="#f1c4ad" d="M17 20h8v7h-8zm26 0h8v7h-8z"/>
+						<path fill="#d9dce0" d="M20 29h9v8h-9zm16 0h9v8h-9z"/>
+						<path fill="#26313a" d="M23 31h4v5h-4zm16 0h4v5h-4z"/>
+						<path fill="#bd8075" d="M30 38h7v5h-7z"/>
+						<path fill="#d9c8ad" d="M17 43h31v10H17z"/>
+						<path fill="#7b6857" d="M18 51h8v13h-8zm22 0h8v13h-8z"/>
+						<path fill="#57483c" d="M13 62h18v7H13zm21 0h18v7H34z"/>
+					</g>
+				</symbol>
+				<symbol id="sprite-tortie" viewBox="0 0 64 72">
+					<g shape-rendering="crispEdges">
+						<path fill="#302c2b" d="M13 18h9V8h10v8h9V8h10v11h7v25h-7v10H13V42H7V25h6z"/>
+						<path fill="#c66d35" d="M15 18h8v10h-8zm27-2h9v11h-9zM13 35h9v10h-9zm27 8h12v10H40z"/>
+						<path fill="#e9d5bd" d="M21 22h25v20H21z"/>
+						<path fill="#e4b698" d="M17 20h8v7h-8zm27 0h8v7h-8z"/>
+						<path fill="#f0ece5" d="M20 29h10v8H20zm15 0h10v8H35z"/>
+						<path fill="#242b32" d="M23 31h4v5h-4zm16 0h4v5h-4z"/>
+						<path fill="#b97069" d="M29 38h8v5h-8z"/>
+						<path fill="#e9d5bd" d="M20 44h27v9H20z"/>
+						<path fill="#302c2b" d="M17 51h9v12h-9zm22 0h9v12h-9z"/>
+						<path fill="#c66d35" d="M11 62h19v7H11zm25 0h18v7H36z"/>
+					</g>
+				</symbol>
+			</svg>
+			<div class="world-backdrop" aria-hidden="true">
+				<div class="world-landscape">
+					<span class="cloud cloud-one"></span>
+					<span class="cloud cloud-two"></span>
+					<span class="cloud cloud-three"></span>
+					<span class="hill hill-one"></span>
+					<span class="hill hill-two"></span>
+					<span class="hill hill-three"></span>
+					<span class="ground"></span>
 				</div>
 			</div>
+			<div class="world-track" id="world-track" tabindex="0">
+				<section class="world-section about-section" id="about" aria-labelledby="about-title">
+					<div class="scene-content about-content">
+						<p class="level-label"><span class="pixel-star" aria-hidden="true">✦</span> LEVEL 01 <span>·</span> PLAYER PROFILE</p>
+						<h1 id="about-title">Hey, I'm<br><span>Michael Wong.</span></h1>
+						<p class="intro">With a background in computer science and life sciences, I’m driven by curiosity and the desire to understand how things work. I love learning, building useful solutions, and finding better ways to solve complex challenges.</p>
 
-	<!-- Social media -->
-			<div class="container_2">
-				<h1>Social media</h1>
-				<div class="social_media">
-					<a href="https://www.linkedin.com/in/wlingkit/" class="fab fa-linkedin" target="_blank"></a>
-					<a href="mailto:mwlingkit@gmail.com" class="fas fa-envelope-square" target="_blank"></a>
-					<a href="https://github.com/wlingkit" class="fab fa-github-square" target="_blank"></a>
-				</div>				
+						<div class="about-cards">
+							<article class="info-card">
+								<div class="card-icon" aria-hidden="true"><img src="images/amgen-mark.png" alt=""></div>
+								<div>
+									<h2>Currently</h2>
+									<p>Software engineer at Amgen, building on what I learned at the University of British Columbia.</p>
+								</div>
+							</article>
+							<article class="info-card">
+								<div class="card-icon" aria-hidden="true"><img src="images/ubc.png" alt=""></div>
+								<div>
+									<h2>Before that</h2>
+									<p>BSc in Combined Major in Science, UBC ’19. Research taught me to stay curious, test assumptions, and keep going.</p>
+								</div>
+							</article>
+						</div>
+						<div class="about-footer">
+							<a class="pixel-button" href="Michael_Wong_Resume_20210729.pdf" target="_blank" rel="noopener">VIEW RESUME <span aria-hidden="true">↗</span></a>
+						</div>
+					</div>
+					<span class="scene-counter" aria-hidden="true">01 <span>/</span> 03</span>
+				</section>
+
+				<section class="world-section projects-section" id="projects" aria-labelledby="projects-title">
+					<div class="scene-content projects-content">
+						<p class="level-label"><span class="pixel-star" aria-hidden="true">✦</span> LEVEL 02 <span>·</span> PROJECT ZONE</p>
+						<div class="section-heading">
+							<div>
+								<h2 id="projects-title">Things I've<br><span>built & explored.</span></h2>
+								<p class="section-intro">A few stops from my software and research journey.</p>
+							</div>
+						</div>
+
+						<div class="project-grid">
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">01</span><span class="project-year">2020</span></div>
+								<img class="project-icon" src="icons/cloud.png" alt="" aria-hidden="true">
+								<h3>Genomics workflows on AWS</h3>
+								<p>Serverless, scalable genomics analysis using AWS, Docker, and Nextflow.</p>
+								<div class="project-tags"><span>AWS</span><span>Docker</span><span>Nextflow</span></div>
+							</article>
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">02</span><span class="project-year">2019</span></div>
+								<img class="project-icon" src="icons/website.svg" alt="" aria-hidden="true">
+								<h3>Personal website</h3>
+								<p>A responsive portfolio built from scratch with HTML, CSS, and JavaScript.</p>
+								<div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+							</article>
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">03</span><span class="project-year">2017</span></div>
+								<img class="project-icon" src="icons/space_invader.svg" alt="" aria-hidden="true">
+								<h3>Space Invader</h3>
+								<p>A Python game with reactive audio, controls, and a Turtle-powered GUI.</p>
+								<div class="project-tags"><span>Python</span><span>Game</span></div>
+							</article>
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">04</span><span class="project-year">2017</span></div>
+								<img class="project-icon" src="icons/chlamy.png" alt="" aria-hidden="true">
+								<h3>Research & experiments</h3>
+								<p>Undergraduate projects spanning biology, genetics, and data analysis.</p>
+								<div class="project-tags"><span>Research</span><span>R</span><span>Science</span></div>
+							</article>
+						</div>
+						<div class="project-zone-footer">
+							<a class="pixel-button secondary-button" href="projects.html">ALL PROJECTS <span aria-hidden="true">↗</span></a>
+						</div>
+					</div>
+					<span class="scene-counter" aria-hidden="true">02 <span>/</span> 03</span>
+				</section>
+
+				<section class="world-section beyond-section" id="beyond" aria-labelledby="beyond-title">
+					<div class="scene-content beyond-content">
+						<p class="level-label"><span class="pixel-star" aria-hidden="true">✦</span> LEVEL 03 <span>·</span> BONUS WORLD</p>
+						<h2 id="beyond-title">Life outside<br><span>the screen.</span></h2>
+						<p class="section-intro">Outside of development, I enjoy gaming, staying active at the gym, and spending quality time with family and friends.</p>
+						<div class="hobby-gallery" aria-label="Hobbies and pets">
+							<img src="images/game1.png" alt="Gaming setup">
+							<img src="images/game2.png" alt="A favorite game">
+							<img src="images/game3.png" alt="Another favorite game">
+							<img src="images/game4.png" alt="Gaming">
+							<img src="images/gym1.png" alt="At the gym">
+							<img src="images/gym2.png" alt="Workout">
+							<img src="images/fish1.png" alt="Aquarium fish">
+							<img src="images/fish2.png" alt="Fish in the aquarium">
+							<img src="images/fish3.png" alt="More aquarium fish">
+							<img src="images/fish4.png" alt="Fish swimming">
+							<img src="images/fish5.png" alt="Aquarium">
+							<img src="images/fish6.png" alt="Fish in the tank">
+							<img src="images/nova1.png" alt="Nova">
+							<img src="images/nova2.png" alt="Nova relaxing">
+							<img src="images/nova3.png" alt="Nova at home">
+							<img src="images/nova4.png" alt="Nova resting">
+							<img src="images/nova5.png" alt="Nova playing">
+							<img src="images/nova6.png" alt="Nova outdoors">
+						</div>
+					</div>
+					<span class="scene-counter" aria-hidden="true">03 <span>/</span> 03</span>
+				</section>
 			</div>
-		</div>
+			<div class="world-controls" aria-label="Move between sections">
+				<button class="scene-arrow previous-arrow" type="button" data-direction="previous" aria-label="Move left" disabled>←</button>
+				<button class="scene-arrow next-arrow" type="button" data-direction="next" aria-label="Move right">→</button>
+			</div>
+			<div class="celestial-orb" aria-hidden="true">
+				<svg class="celestial-sun" viewBox="0 0 96 96">
+					<defs>
+						<linearGradient id="sun-gradient" x1="25%" y1="15%" x2="80%" y2="90%">
+							<stop offset="0%" stop-color="#fff1a0"/>
+							<stop offset="55%" stop-color="#ffd35c"/>
+							<stop offset="100%" stop-color="#f29142"/>
+						</linearGradient>
+					</defs>
+					<g fill="url(#sun-gradient)">
+						<path d="M44 3h8v10h-8zM44 83h8v10h-8zM3 44h10v8H3zM83 44h10v8H83z"/>
+						<path d="M17 12h8v8h-8zM71 76h8v8h-8zM76 17h8v8h-8zM12 71h8v8h-8z"/>
+						<path d="M38 17h20v5h10v5h5v10h5v22h-5v10h-5v5H58v5H38v-5H28v-5h-5V59h-5V37h5V27h5v-5h10z"/>
+					</g>
+				</svg>
+				<svg class="celestial-moon" viewBox="0 0 96 96">
+					<defs>
+						<linearGradient id="moon-gradient" x1="25%" y1="15%" x2="80%" y2="90%">
+							<stop offset="0%" stop-color="#f3eaff"/>
+							<stop offset="52%" stop-color="#b8c8ff"/>
+							<stop offset="100%" stop-color="#8298df"/>
+						</linearGradient>
+					</defs>
+					<path fill="url(#moon-gradient)" d="M57 9h13v5H57zm-9 5h9v5h-9zm-9 5h9v5h-9zm-5 5h5v9h-5zm-5 9h5v28h-5zm5 28h5v9h-5zm5 9h9v5h-9zm9 5h28v5H48zm28-5h9v-5h-9zm9-5h5v-9h-5zm-5-9h-5V42h-5V29h-5V19h-5v-5h-5v14h-5v5h-5v28h5v9h5v5h15v-5h10v-5h5z"/>
+					<path fill="url(#moon-gradient)" d="M17 14h5v5h-5zm14-7h5v5h-5zm-7 27h5v5h-5zm50 12h5v5h-5z" opacity=".85"/>
+				</svg>
+			</div>
+			<div class="mascot-party" aria-hidden="true">
+				<svg class="mascot mascot-person" viewBox="0 0 64 88"><use href="#sprite-person"></use></svg>
+				<svg class="mascot mascot-wife" viewBox="0 0 64 88"><use href="#sprite-wife"></use></svg>
+				<svg class="mascot mascot-dog" viewBox="0 0 88 64"><use href="#sprite-dog"></use></svg>
+				<svg class="mascot mascot-tabby" viewBox="0 0 64 72"><use href="#sprite-tabby"></use></svg>
+				<svg class="mascot mascot-tortie" viewBox="0 0 64 72"><use href="#sprite-tortie"></use></svg>
+			</div>
+			<div class="world-progress" aria-hidden="true"><span></span></div>
+		</main>
 	</div>
+	<script>
+		(() => {
+			const body = document.body;
+			const themeToggle = document.querySelector('.theme-toggle');
+			const themeIcon = themeToggle.querySelector('i');
+			const track = document.querySelector('.world-track');
+			const world = document.querySelector('.world');
+			const celestialOrb = document.querySelector('.celestial-orb');
+			const mascotParty = document.querySelector('.mascot-party');
+			const sections = [...document.querySelectorAll('.world-section')];
+			const progress = document.querySelector('.world-progress span');
+			const menuToggle = document.querySelector('.menu-toggle');
+			const siteLinks = document.querySelector('.site-links');
+			const themeKey = 'theme';
+
+			const setTheme = (theme) => {
+				body.dataset.theme = theme;
+				themeIcon.className = `fas ${theme === 'dark' ? 'fa-moon' : 'fa-sun'}`;
+				themeToggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
+				try {
+					localStorage.setItem(themeKey, theme);
+				} catch (error) {
+					console.warn('Could not save the selected theme.', error);
+				}
+			};
+
+			let savedTheme;
+			try {
+				savedTheme = localStorage.getItem(themeKey);
+			} catch (error) {
+				console.warn('Could not read the saved theme.', error);
+			}
+			const initialTheme = savedTheme === 'light' || savedTheme === 'dark'
+				? savedTheme
+				: (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+			setTheme(initialTheme);
+
+			themeToggle.addEventListener('click', () => {
+				setTheme(body.dataset.theme === 'dark' ? 'light' : 'dark');
+			});
+
+			const closeMenu = () => {
+				menuToggle.setAttribute('aria-expanded', 'false');
+				menuToggle.setAttribute('aria-label', 'Open navigation');
+				siteLinks.classList.remove('is-open');
+			};
+
+			menuToggle.addEventListener('click', () => {
+				const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+				menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+				menuToggle.setAttribute('aria-label', isExpanded ? 'Open navigation' : 'Close navigation');
+				siteLinks.classList.toggle('is-open', !isExpanded);
+			});
+
+			document.addEventListener('click', (event) => {
+				if (menuToggle.getAttribute('aria-expanded') === 'true'
+					&& !menuToggle.contains(event.target)
+					&& !siteLinks.contains(event.target)) {
+					closeMenu();
+				}
+			});
+
+			siteLinks.addEventListener('click', (event) => {
+				if (event.target.closest('a')) {
+					closeMenu();
+				}
+			});
+
+			const moveToSection = (index) => {
+				const target = sections[Math.max(0, Math.min(index, sections.length - 1))];
+				const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+				const mobileViewport = matchMedia('(max-width: 600px)').matches;
+				if (mobileViewport || reducedMotion) {
+					const previousBehavior = track.style.scrollBehavior;
+					track.style.scrollBehavior = 'auto';
+					track.scrollTo({ left: target.offsetLeft, behavior: 'auto' });
+					track.style.scrollBehavior = previousBehavior;
+					updateProgress();
+					return;
+				}
+				track.scrollTo({ left: target.offsetLeft, behavior: 'smooth' });
+			};
+
+			document.querySelectorAll('.world-controls .scene-arrow').forEach((button) => {
+				button.addEventListener('click', () => {
+					const currentIndex = Math.round(track.scrollLeft / track.clientWidth);
+					moveToSection(currentIndex + (button.dataset.direction === 'next' ? 1 : -1));
+				});
+			});
+
+			track.addEventListener('keydown', (event) => {
+				if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+				if (event.target.closest('a, button')) return;
+				event.preventDefault();
+				const currentIndex = Math.round(track.scrollLeft / track.clientWidth);
+				moveToSection(currentIndex + (event.key === 'ArrowRight' ? 1 : -1));
+			});
+
+			const updateProgress = () => {
+				const maxScroll = track.scrollWidth - track.clientWidth;
+				const scrollRatio = maxScroll > 0 ? track.scrollLeft / maxScroll : 0;
+				progress.style.transform = `scaleX(${scrollRatio})`;
+				const parallaxRate = matchMedia('(max-width: 600px)').matches ? 0.04 : 0.28;
+				const parallaxOffset = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : track.scrollLeft * parallaxRate;
+				celestialOrb.style.transform = `translate3d(${-parallaxOffset}px, 0, 0)`;
+				const backdrop = document.querySelector('.world-backdrop');
+				backdrop.style.width = `${track.scrollWidth}px`;
+				const backdropOffset = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : track.scrollLeft * 0.32;
+				backdrop.style.transform = `translate3d(${-backdropOffset}px, 0, 0)`;
+				const currentIndex = Math.round(track.scrollLeft / track.clientWidth);
+				document.querySelector('.world-controls .previous-arrow').disabled = currentIndex <= 0;
+				document.querySelector('.world-controls .next-arrow').disabled = currentIndex >= sections.length - 1;
+				const sidePadding = Math.min(24, world.clientWidth * 0.06);
+				const travelDistance = Math.max(0, world.clientWidth - mascotParty.offsetWidth - sidePadding * 2);
+				mascotParty.style.transform = `translate3d(${sidePadding + scrollRatio * travelDistance}px, 0, 0)`;
+			};
+			track.addEventListener('scroll', updateProgress, { passive: true });
+			window.addEventListener('resize', updateProgress);
+			new ResizeObserver(updateProgress).observe(track);
+			updateProgress();
+		})();
+	</script>
 </body>
 </html>
