@@ -1,172 +1,278 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Projects</title>
+	<title>Projects | Michael Wong</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-	<link rel="stylesheet" type="text/css" href="css/project_style.css">
+	<meta name="theme-color" content="#09111c">
+	<link rel="stylesheet" href="css/project_style.css?v=16">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/2aea866abf.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-	<nav>
-		<div class="toggle">
-			<i class="fa fa-bars menu" aria-hidden="true"></i>
-		</div>
-		<ul>
-			<li><a href="index.html">Home</a></li>					
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="Michael_Wong_Resume_20210729.pdf" target="_black">Resume</a></li>										
-		</ul>
-	</nav>
-	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<script type="text/javascript">
-			$(document).ready(function(){
-				$('.menu').click(function(){
-					$('ul').toggleClass('active');
-				})
-			})
-	</script>
-	<!-- cpsc -->
-	<div class="all_container">
-		<div class="parallel_container">
-			<h1>Software projects</h1>
-			<div class="item_container">
-				<img class="small_box" src="icons/cloud.png">
-				<div class="large_box">
-					<div class="sub_heading">
-						Genomics Workflows on AWS
-					</div>
-					<div class="sub_sub_heading">
-						2020
-					</div>
-					A cloud-based, serverless, and highly scalable workflow solution that uses <b>AWS</b>, <b>Docker</b>, and <b>Nextflow</b>. It allows users to run large scale genomics analyses in parallel.
-				</div>
+	<div class="MainContainer">
+		<header class="site-header">
+			<a class="brand" href="index.html#about" aria-label="Michael Wong, home">
+				<span class="brand-mark" aria-hidden="true">MW</span>
+				<span>MICHAEL WONG</span>
+			</a>
+			<div class="header-social-links" aria-label="Social links">
+				<a href="https://www.linkedin.com/in/wlingkit/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+				<a href="https://github.com/wlingkit" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+				<a href="mailto:mwlingkit@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
 			</div>
-			<div class="item_container">
-				<img class="small_box" src="icons/website.svg">
-				<div class="large_box">
-					<div class="sub_heading">
-						Personal website
-					</div>
-					<div class="sub_sub_heading">
-						2019
-					</div>
-					A personal website built by me using <b>CSS</b>, <b>HTML</b>, and <b>JavaScript</b>. It is simple, unique to my taste and it is created with a responsive design. It contains effects such as parallax scrolling and collapsing navbar to promote a smooth layout transition.
+			<nav aria-label="Main navigation">
+				<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-links" aria-label="Open navigation">
+					<i class="fas fa-bars" aria-hidden="true"></i>
+				</button>
+				<div class="site-links" id="site-links">
+					<a href="index.html#about">Home</a>
+					<a href="#software">Software</a>
+					<a href="#research">Research</a>
+					<a href="Michael_Wong_Resume_20210729.pdf" target="_blank" rel="noopener">Resume</a>
+					<button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">
+						<i class="fas fa-moon" aria-hidden="true"></i>
+					</button>
 				</div>
-			</div>
+			</nav>
+		</header>
 
-			<div class="item_container">
-				<img class="small_box" src="icons/space_invader.svg">
-				<div class="large_box">
-					<div class="sub_heading">
-						Space invader
-					</div>
-					<div class="sub_sub_heading">
-						2017
-					</div>
-					A project done in <b>Python</b>. A game with reactive audio feedback and controls, all within the GUI built using the Turtle library. 
+		<main class="world" aria-label="Projects side scroller">
+			<div class="world-backdrop" aria-hidden="true">
+				<div class="world-landscape">
+					<span class="cloud cloud-one"></span>
+					<span class="cloud cloud-two"></span>
+					<span class="cloud cloud-three"></span>
+					<span class="hill hill-one"></span>
+					<span class="hill hill-two"></span>
+					<span class="hill hill-three"></span>
+					<span class="ground"></span>
 				</div>
 			</div>
+			<div class="world-track" id="world-track" tabindex="0">
+				<section class="world-section software-section" id="software" aria-labelledby="software-title">
+					<div class="scene-content">
+						<p class="level-label"><span class="pixel-star" aria-hidden="true">✦</span> LEVEL 02.1 <span>·</span> SOFTWARE PROJECTS</p>
+						<div class="section-heading">
+							<div>
+								<h1 id="software-title">Ideas turned<br><span>into software.</span></h1>
+								<p class="section-intro">Tools, apps, experiments, and a few things built along the way.</p>
+							</div>
+						</div>
 
-			<div class="item_container">				
-				<img class="small_box" src="icons/AI.png">
-				<div class="large_box">
-					<div class="sub_heading">
-						Global AI Hackathon
+						<div class="project-grid">
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">01</span><span class="project-year">2020</span></div>
+								<img class="project-icon" src="icons/cloud.png" alt="" aria-hidden="true">
+								<h2>Genomics Workflows on AWS</h2>
+								<p>A cloud-based, serverless, and highly scalable workflow solution using <b>AWS</b>, <b>Docker</b>, and <b>Nextflow</b>. It allows users to run large-scale genomics analyses in parallel.</p>
+								<div class="project-tags"><span>AWS</span><span>Docker</span><span>Nextflow</span></div>
+							</article>
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">02</span><span class="project-year">2019</span></div>
+								<img class="project-icon" src="icons/website.svg" alt="" aria-hidden="true">
+								<h2>Personal website</h2>
+								<p>A responsive personal website built with <b>CSS</b>, <b>HTML</b>, and <b>JavaScript</b>, with parallax scrolling and a collapsible navigation.</p>
+								<div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+							</article>
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">03</span><span class="project-year">2017</span></div>
+								<img class="project-icon" src="icons/space_invader.svg" alt="" aria-hidden="true">
+								<h2>Space Invader</h2>
+								<p>A <b>Python</b> game with reactive audio feedback and controls, built with a GUI using the Turtle library.</p>
+								<div class="project-tags"><span>Python</span><span>Turtle</span><span>Game</span></div>
+							</article>
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">04</span><span class="project-year">2017</span></div>
+								<img class="project-icon" src="icons/AI.png" alt="" aria-hidden="true">
+								<h2>Global AI Hackathon</h2>
+								<p>A team-built joke classifier trained with supervised learning on adapted web data, reaching roughly <b>86% accuracy</b>.</p>
+								<div class="project-tags"><span>AI</span><span>Machine learning</span></div>
+							</article>
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">05</span><span class="project-year">2015</span></div>
+								<img class="project-icon" src="icons/train.png" alt="" aria-hidden="true">
+								<h2>Train timetable & GPS app</h2>
+								<p>An Android app for the London metro system in <b>Java</b>, displaying station information and live details responsive to the user’s location.</p>
+								<div class="project-tags"><span>Android</span><span>Java</span><span>Maps</span></div>
+							</article>
+						</div>
 					</div>
-					<div class="sub_sub_heading">
-						2017
-					</div>
-					A group project done within a two days time limit. The program is an AI that was designed to identify whether a given sentence is a joke or not. Using modified data parsed from varies websites, it was trained with supervised learning to obtain an accuracy of roughly 86%.
-				</div>
-			</div>
+					<span class="scene-counter" aria-hidden="true">01 <span>/</span> 02</span>
+				</section>
 
-			<div class="item_container">
-				<img class="small_box" src="icons/train.png">
-				<div class="large_box">
-					<div class="sub_heading">
-						Train station timetable and GPS tracking app
-					</div>
-					<div class="sub_sub_heading">
-						2015
-					</div>
-					An android application created for the London metro system in <b>Java</b>. The data was collected using an API call and was stored into appropriate data structures. It displays detailed station information of user’s choosing that is responsive to their location.
-				</div>
-			</div>
-		</div>
-		
-		<!-- research -->
-		<div class="parallel_container">
-			<h1>Research projects</h1>
-			
+				<section class="world-section research-section" id="research" aria-labelledby="research-title">
+					<div class="scene-content">
+						<p class="level-label"><span class="pixel-star" aria-hidden="true">✦</span> LEVEL 02.2 <span>·</span> RESEARCH PROJECTS</p>
+						<div class="section-heading">
+							<div>
+								<h2 id="research-title">Questions worth<br><span>investigating.</span></h2>
+								<p class="section-intro">Research projects exploring biology, genetics, and the natural world.</p>
+							</div>
+						</div>
 
-			<div class="item_container">
-				<img class="small_box" src="icons/chlamy.png">
-				<div class="large_box">
-					<div class="sub_heading">
-						The effects of temperature on the Oxygen Production of <i>Chlamydomonas reinhardtii</i>
+						<div class="project-grid">
+							<a class="project-card" href="https://ojs.library.ubc.ca/index.php/expedition/article/view/191440" target="_blank" rel="noopener noreferrer">
+								<div class="project-top"><span class="project-number">01</span><span class="project-year">2018</span></div>
+								<img class="project-icon" src="icons/chlamy.png" alt="" aria-hidden="true">
+								<h2>Temperature & oxygen production in <i>Chlamydomonas reinhardtii</i></h2>
+								<p>An experiment on how temperature affects oxygen production in <i>Chlamydomonas reinhardtii</i> and, in turn, salmon populations. Designed from literature research and carried out using sterile techniques; no significant difference was found.</p>
+								<div class="project-tags"><span>Biology</span><span>Lab research</span></div>
+							</a>
+							<a class="project-card" href="REX.pdf" target="_blank" rel="noopener noreferrer">
+								<div class="project-top"><span class="project-number">02</span><span class="project-year">2018</span></div>
+								<img class="project-icon" src="icons/URO.png" alt="" aria-hidden="true">
+								<h2>Identifying synthetic lethality partners</h2>
+								<p>A hypothetical experiment designed through conventional research methods. Molecular biology techniques and data generated with <b>R</b> supported a presentation at the 2018 Multidisciplinary Undergraduate Research Conference.</p>
+								<div class="project-tags"><span>Research</span><span>Molecular biology</span><span>R</span></div>
+							</a>
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">03</span><span class="project-year">2017</span></div>
+								<img class="project-icon" src="icons/drinks.png" alt="" aria-hidden="true">
+								<h2>Beverage temperature preferences</h2>
+								<p>An observational study of beverage temperature preference and gender at multiple Starbucks locations on the UBC Vancouver campus. Statistical analysis found no correlation.</p>
+								<div class="project-tags"><span>Statistics</span><span>Observational study</span></div>
+							</article>
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">04</span><span class="project-year">2017</span></div>
+								<img class="project-icon" src="icons/crabs.png" alt="" aria-hidden="true">
+								<h2>Temperature & movement in <i>Hemigrapsus oregonensis</i></h2>
+								<p>A controlled experiment on how environmental temperature affects the movement of <i>Hemigrapsus oregonensis</i>. Findings supported the hypothesis that temperature affects this species’ movement.</p>
+								<div class="project-tags"><span>Ecology</span><span>Experiment</span></div>
+							</article>
+							<article class="project-card">
+								<div class="project-top"><span class="project-number">05</span><span class="project-year">2017</span></div>
+								<img class="project-icon" src="icons/genes.png" alt="" aria-hidden="true">
+								<h2>Genetics of perchlorate reduction</h2>
+								<p>Identified an unknown mutated gene and the source of its phenotype using <b>GenBank</b>, <b>BLAST</b>, and <b>ExPASy</b>.</p>
+								<div class="project-tags"><span>Genetics</span><span>GenBank</span><span>BLAST</span></div>
+							</article>
+						</div>
+						<div class="project-zone-footer">
+							<a class="pixel-button secondary-button" href="index.html#about">BACK TO ABOUT <span aria-hidden="true">↗</span></a>
+						</div>
 					</div>
-					<div class="sub_sub_heading">
-						2018
-					</div>
-					An experiment done to understand how temperature affects the oxygen production of <i>Chlamydomonas reinhardtii</i>, and in turn, affects the population of salmon in the environment. The experiment was designed after extensive literature research and was carried out with common laboratory procedures. This includes <b>sterile techniques</b> to ensure little to no contamination of our subjects. Ultimately, we found no significant difference.
-				</div>
+					<span class="scene-counter" aria-hidden="true">02 <span>/</span> 02</span>
+				</section>
 			</div>
-
-			<div class="item_container">
-				<img class="small_box" src="icons/URO.png">
-				<div class="large_box">
-					<div class="sub_heading">
-						Identification of synthetic lethality partners (Research Experience Program)
-					</div>
-					<div class="sub_sub_heading">
-						2018
-					</div>
-					A project mainly done to understand the process of researching. A hypothetical experiment designed using conventional experimental design procedure. Using proper molecular biology techniques and hypothetical data and graphs generated by <b>R</b>, the project was presented at the <b>2018 Multidisciplinary Undergraduate Research Conference</b>.
-				</div>
+			<div class="world-controls" aria-label="Move between project sections">
+				<button class="scene-arrow previous-arrow" type="button" data-direction="previous" aria-label="Move left" disabled>←</button>
+				<button class="scene-arrow next-arrow" type="button" data-direction="next" aria-label="Move right">→</button>
 			</div>
-
-			<div class="item_container">
-				<img class="small_box" src="icons/drinks.png">
-				<div class="large_box">
-					<div class="sub_heading">
-						Correlation between preference of beverage temperatures and genders
-					</div>
-					<div class="sub_sub_heading">
-						2017
-					</div>
-					An observational experiment done to understand the relationship between beverage temperature preference and gender. The experiment was carried out at multiple Starbucks at UBC Vancouver campus.  After a thorough statistic analysis of the data, no correlation was found.
-				</div>
-			</div>
-
-			<div class="item_container">
-				<img class="small_box" src="icons/crabs.png">
-				<div class="large_box">
-					<div class="sub_heading">
-						Influence of temperature on the rate of movement of <i>Hemigrapsus oregonensis</i>
-					</div>
-					<div class="sub_sub_heading">
-						2017
-					</div>
-					An experiment done to have a better understand of how the environment affects the behaviour of <i>Hemigrapsus oregonensis</i>. It was a <b>separate treatment</b> experiment that kept extraneous variables and treatment temperatures constant. The findings agreed with the hypothesis that temperature does have an effect on this species, which gave us insight on how it behaves in nature.
-				</div>
-			</div>
-
-			<div class="item_container">
-				<img class="small_box" src="icons/genes.png">
-				<div class="large_box">
-					<div class="sub_heading">
-						Genetics of Perchlorate Reduction
-					</div>
-					<div class="sub_sub_heading">
-						2017
-					</div>
-					This project was done to identify an unknown mutated gene and find the source of the mutated phenotype. The species of this gene along with the position of the mutation were identified using multiple genetic tools such as <b>GenBank</b>, <b>BLAST</b>, and <b>ExPASy</b>.
-				</div>
-			</div>
-		</div>
+			<div class="world-progress" aria-hidden="true"><span></span></div>
+		</main>
 	</div>
+	<script>
+		(() => {
+			const body = document.body;
+			const themeToggle = document.querySelector('.theme-toggle');
+			const themeIcon = themeToggle.querySelector('i');
+			const track = document.querySelector('.world-track');
+			const sections = [...document.querySelectorAll('.world-section')];
+			const progress = document.querySelector('.world-progress span');
+			const menuToggle = document.querySelector('.menu-toggle');
+			const siteLinks = document.querySelector('.site-links');
+
+			const setTheme = (theme) => {
+				body.dataset.theme = theme;
+				themeIcon.className = `fas ${theme === 'dark' ? 'fa-moon' : 'fa-sun'}`;
+				themeToggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
+				try {
+					localStorage.setItem('theme', theme);
+				} catch (error) {
+					console.warn('Could not save the selected theme.', error);
+				}
+			};
+
+			let savedTheme;
+			try {
+				savedTheme = localStorage.getItem('theme');
+			} catch (error) {
+				console.warn('Could not read the saved theme.', error);
+			}
+			const initialTheme = savedTheme === 'light' || savedTheme === 'dark'
+				? savedTheme
+				: (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+			setTheme(initialTheme);
+
+			themeToggle.addEventListener('click', () => {
+				setTheme(body.dataset.theme === 'dark' ? 'light' : 'dark');
+			});
+
+			const closeMenu = () => {
+				menuToggle.setAttribute('aria-expanded', 'false');
+				menuToggle.setAttribute('aria-label', 'Open navigation');
+				siteLinks.classList.remove('is-open');
+			};
+
+			menuToggle.addEventListener('click', () => {
+				const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+				menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+				menuToggle.setAttribute('aria-label', isExpanded ? 'Open navigation' : 'Close navigation');
+				siteLinks.classList.toggle('is-open', !isExpanded);
+			});
+
+			document.addEventListener('click', (event) => {
+				if (menuToggle.getAttribute('aria-expanded') === 'true'
+					&& !menuToggle.contains(event.target)
+					&& !siteLinks.contains(event.target)) {
+					closeMenu();
+				}
+			});
+
+			siteLinks.addEventListener('click', (event) => {
+				if (event.target.closest('a')) {
+					closeMenu();
+				}
+			});
+
+			const moveToSection = (index) => {
+				const target = sections[Math.max(0, Math.min(index, sections.length - 1))];
+				const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+				const mobileViewport = matchMedia('(max-width: 600px)').matches;
+				if (mobileViewport || reducedMotion) {
+					const previousBehavior = track.style.scrollBehavior;
+					track.style.scrollBehavior = 'auto';
+					track.scrollTo({ left: target.offsetLeft, behavior: 'auto' });
+					track.style.scrollBehavior = previousBehavior;
+					updateProgress();
+					return;
+				}
+				track.scrollTo({ left: target.offsetLeft, behavior: 'smooth' });
+			};
+
+			document.querySelectorAll('.world-controls .scene-arrow').forEach((button) => {
+				button.addEventListener('click', () => {
+					const currentIndex = Math.round(track.scrollLeft / track.clientWidth);
+					moveToSection(currentIndex + (button.dataset.direction === 'next' ? 1 : -1));
+				});
+			});
+
+			track.addEventListener('keydown', (event) => {
+				if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+				if (event.target.closest('a, button')) return;
+				event.preventDefault();
+				const currentIndex = Math.round(track.scrollLeft / track.clientWidth);
+				moveToSection(currentIndex + (event.key === 'ArrowRight' ? 1 : -1));
+			});
+
+			const updateProgress = () => {
+				const maxScroll = track.scrollWidth - track.clientWidth;
+				const scrollRatio = maxScroll > 0 ? track.scrollLeft / maxScroll : 0;
+				progress.style.transform = `scaleX(${scrollRatio})`;
+				const backdrop = document.querySelector('.world-backdrop');
+				backdrop.style.width = `${track.scrollWidth}px`;
+				const backdropOffset = matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : track.scrollLeft * 0.32;
+				backdrop.style.transform = `translate3d(${-backdropOffset}px, 0, 0)`;
+				const currentIndex = Math.round(track.scrollLeft / track.clientWidth);
+				document.querySelector('.world-controls .previous-arrow').disabled = currentIndex <= 0;
+				document.querySelector('.world-controls .next-arrow').disabled = currentIndex >= sections.length - 1;
+			};
+			track.addEventListener('scroll', updateProgress, { passive: true });
+			window.addEventListener('resize', updateProgress);
+			new ResizeObserver(updateProgress).observe(track);
+			updateProgress();
+		})();
+	</script>
 </body>
 </html>
